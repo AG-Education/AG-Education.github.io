@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src:  url('fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+        url('fonts/SpaceGrotesk-Medium.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src:  url('fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+        url('fonts/SpaceGrotesk-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+body {
+  background: #fcfcff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+  padding: 124px;
+  max-width: 1200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  margin-bottom: 112px;
+}
+
+.logo {
+  width: 29px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+h1 span {
+  background: -webkit-linear-gradient(0deg, #3600d0, #00dfd2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #5a536d;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+p span {
+  display: inline;
+}
+
+h2 {
+  color: #9f9cac;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+a {
+  font-weight: bold;
+  color: #3600d0;
+  text-decoration: none;
+}
+
+a::after {
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url('img/external.svg');
+  vertical-align: text-bottom;
+  margin-left: 4px;
+}
+
+a:hover {
+  border-bottom: 2px solid #3600d0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  color: #9f9cac;
+}
+
+.copyright span {
+  display: inline-block;
+}
+
+.contact a {
+  color: #9f9cac;
+  font-weight: 400;
+}
+
+.contact a:hover {
+  border-color: #9f9cac;
+}
+
+.contact a::after {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 40px;
+  }
+
+  p span {
+    display: block;
+  }
+}
